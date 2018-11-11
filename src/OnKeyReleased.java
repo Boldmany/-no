@@ -40,11 +40,15 @@ public class OnKeyReleased implements EventHandler<KeyEvent>{
 			}
 		}
 		
-		if(key.getCode() == KeyCode.SEMICOLON && !Game.sonic().right()) {
+		if(key.getCode() == KeyCode.LEFT && !Game.sonic().right()) {
 			Game.sonic().setMove(false);
 			if(!Game.sonic().gravity() && !Game.sonic().stunned().stunned() && Game.sonic().special().physics()) {
 				Game.sonic().sprites().setCurrentSprite(Game.sonic().sprites().stand()[1]);
 			}
+		}
+		
+		if(key.getCode() == KeyCode.SEMICOLON && !Game.sonic().right()) {
+			Game.sonic().setShooting(false);
 		}
 		
 		if(key.getCode() == KeyCode.L) {

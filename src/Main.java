@@ -33,7 +33,7 @@ public class Main extends Application{
 		window.setScene(scene);
 		window.setTitle("Super Smash Bros");
 		window.show();
-		
+	;	
 		for(int i = 0; i < 2; i++) {
 			Game.wins()[i].setTextFill(Color.WHITE);
 			Game.wins()[i].setFont(new Font("Comicsans", 100));
