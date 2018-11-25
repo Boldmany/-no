@@ -50,10 +50,6 @@ public class OnKeyReleased implements EventHandler<KeyEvent>{
 		if(key.getCode() == KeyCode.SEMICOLON && !Game.sonic().right()) {
 			Game.sonic().setShooting(false);
 		}
-		
-		if(key.getCode() == KeyCode.L) {
-			Game.sonic().setShooting(false);
-		}
 	}
 
 }
